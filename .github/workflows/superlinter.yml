@@ -13,5 +13,5 @@ jobs:
       - name: Run Super-Linter
         uses: github/super-linter@v4
         env:
-          DEFAULT_BRANCH: main
+          DEFAULT_BRANCH: master
           GITHUB_TOKEN: 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
