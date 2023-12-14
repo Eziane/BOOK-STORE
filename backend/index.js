@@ -4,10 +4,12 @@ import mongoose from "mongoose";
 import { Book } from "./models/bookModel.js";
 import booksRoute from './routes/booksRoute.js'
 import cors from 'cors';
+const path = require('path');
 
 
 const app = express();
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '/frontend/build')));
 
 //cors middleware
 //Option 1: allow all  origins with default of cors (*)
